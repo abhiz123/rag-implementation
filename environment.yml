@@ -1,0 +1,21 @@
+name: rag-env
+channels:
+  - pytorch
+  - huggingface
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - pytorch
+  - torchvision
+  - torchaudio
+  - cudatoolkit=11.3  # Adjust this version based on your CUDA version
+  - transformers
+  - datasets
+  - faiss-cpu  # or faiss-gpu if you have a GPU
+  - pandas
+  - numpy
+  - tqdm
+  - pip
+  - pip:
+    - sentence-transformers
